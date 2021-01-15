@@ -1,9 +1,12 @@
-#Systemd is a central management tool to control initialisation at the start of the kernel. It can also manage services and daemons while the system is running.#
+# Systemd 
+**Systemd is a central management tool to control initialisation at the start of the kernel. It can also manage services and daemons while the system is running.
 
 
-Checking the Status of Services::
+#### Checking the Status of Services::
+- _ _systemctl status application.service
 
-Starting and Stopping services:
+
+##### Starting and Stopping services:
 
 Start and stop services:
 
