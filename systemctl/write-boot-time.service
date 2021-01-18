@@ -1,0 +1,12 @@
+[Unit]
+Description=foo.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/testboot.sh
+RemainAfterExit=yes
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
