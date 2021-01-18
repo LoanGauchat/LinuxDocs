@@ -1,0 +1,14 @@
+[Unit]
+Description=write-boot-time.service
+
+[Service]
+Type=oneshot
+Environment="SCRIPT_ARGS=%I"
+ExecStart=/bin/write-boot-time2.sh $SCRIPT_ARGS
+RemainAfterExit=yes
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+
