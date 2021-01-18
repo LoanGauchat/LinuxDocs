@@ -1,9 +1,9 @@
 [Unit]
-Description=foo.service
+Description=write-boot-time.service
 
 [Service]
 Type=oneshot
-ExecStart=/bin/testboot.sh
+ExecStart=/bin/write-boot-time.sh
 RemainAfterExit=yes
 User=root
 
