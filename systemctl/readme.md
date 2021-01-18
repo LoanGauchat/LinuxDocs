@@ -21,7 +21,7 @@
 
 This will create a symbolic link from the system’s copy of the service file (usually in /lib/systemd/system or /etc/systemd/system) into the location on disk where systemd looks for autostart files (usually /etc/systemd/system/some_target.target.wants).
 
-If executing a script, make sure the scrip *is not in the home folder and have the correct rights*
+If executing a script, make sure the scrip **is not in the home folder and have the correct rights**
 
 systemctl disable application.service
 This will remove the symbolic link that indicated that the service should be started automatically.
